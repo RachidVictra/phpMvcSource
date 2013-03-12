@@ -1,0 +1,63 @@
+﻿<h1>Ajouter un nouveau produit</h1>
+<form id="form1" method="post">
+	<table>
+		<tr>
+			<td>Designation : </td>
+			<td>
+				<input type="text" id="designation" name="designation" 
+				value="<?php echo $this->viewData['produit']->getDesignation();?>"/>
+				<span id="erreur">
+					<?php 
+						echo $this->viewData['produit']->ValidationMessage("designation");
+					?>
+				</span>
+			</td>
+		</tr>
+		<tr>
+			<td>Prix Unitaire : </td>
+			<td>
+				<input type="text" id="prix" name="prix" 
+				value="<?php echo $this->viewData['produit']->getPrixUnitaire();?>"/>(DH)
+				<span id="erreur">
+					<?php 
+					echo $this->viewData['produit']->ValidationMessage("prixUnitaire");
+					?>
+				</span>
+			</td>
+		</tr>
+		<tr>
+			<td>Tva : </td>
+			<td>
+				<input type="text" id="tva" name="tva" 
+				value="<?php echo $this->viewData['produit']->getTva();?>"/>(%)
+				<span id="erreur">
+				<?php 
+				echo $this->viewData['produit']->ValidationMessage("tva");
+				?></span>
+			</td>
+		</tr>
+		<tr>
+			<td>Quantité : </td>
+			<td><input type="text" id="quantite" name="quantite" 
+			value="<?php echo $this->viewData['produit']->getQuantite();?>"/>
+			<span id="erreur">
+			<?php 
+			echo $this->viewData['produit']->ValidationMessage("quantite");
+			?></span>
+		</td>
+		</tr>
+		<tr>
+			<td>Famille : </td>
+			<td>
+				<select id="famille" name="famille">
+					<?php 
+						foreach($this->viewData['listFamille'] as $cat)
+							echo '<option value="'.$cat['id'].'">
+							'.$cat['famille'].'</option>';
+					?>
+				</select>
+			</td>
+		</tr>
+		<tr><td colspan='2'><input type="submit" value="Ajouter" /></td></tr>
+	</table>
+</form>
