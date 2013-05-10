@@ -5,9 +5,9 @@
 		protected $ErrorAttribut = array();
 		//Tableau contiendra les attributs no valide et les messages d'erreur.
 		protected $listError = array();
-		
+
 		//Méthodes de Validation des Attributs
-		
+
 		/**
 			* @desc  Spécifie le message d'erreur pour les éventuels attributs no valide.
 			* @param   str $attribut      Nom de l'attribut
@@ -20,7 +20,7 @@
 				if($ErrorAttribut[$i] === $attribut)
 					$listError[$attribut] = $messageError;
 		}
-		
+
 		/**
 			* @desc  Retourne le message d'erreur de l'attribut no valide.
 			* @param   str $attribut      Nom de l'attribut
@@ -31,7 +31,7 @@
 			if(!empty($listError))
 				if(array_key_exists($attribut, $listError))
 					return $listError[$attribut];
-					
+
 			return "";
 		}
 		/**
