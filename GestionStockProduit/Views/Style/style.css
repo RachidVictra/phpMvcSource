@@ -1,0 +1,114 @@
+﻿/********************************************
+   AUTHOR:  	Rachid
+ *******************************************/ 
+
+body {
+	width: 970px;
+	padding-top:10px;
+	margin-bottom:0px;
+	font: normal 15 Calibri;
+	color: #555;
+	margin:auto;/* Pour centrer notre page */
+	background:#d9d9ff;	
+}
+
+/* start - table */
+table {
+	border-collapse: collapse;
+	margin: 15px;	
+	border: solid 2px #FFF;
+}
+th strong {
+	color: #fff;
+}
+th {
+	background: #993333;
+	height: 29px;
+	padding-left: 3px;
+	padding-right: 3px;
+	color: #FFF;
+	text-align: left;
+	border-left: 1px solid #D68686;
+	border-bottom: solid 2px #FFF;
+}
+tr {
+	height: 30px;
+}
+td {
+	padding-left: 11px;
+	padding-right: 11px;
+	border-left: 1px solid #E8E8E8;
+	border-bottom: 1px solid #DFDFDF;
+}
+td.first,th.first {
+	border-left: 0px;
+}
+tr.row-a {
+	background: #F8F8F8;
+}
+tr.row-b {
+	background: #EFEFEF;		
+}
+/* end - table */
+
+form {
+	margin:10px 15px; padding: 0;
+	border: 1px solid #f2f2f2; 
+	background-color: #FAFAFA; 
+}
+/***********************
+	  LAYOUT
+************************/
+
+#header, #content, #footer {
+	width: 970px;
+}
+/* header */
+#header {
+	padding:5px;
+	height: 100px;
+	background-color:#333333;
+	color:#d9d9d9;
+	font: normal 19 Calibri;
+	text-align: left;	
+}
+/* content */
+#content{
+	clear: both;
+	float: left;
+	width: 100%;
+}
+/* Menu  */
+#menu {
+	float: left;
+	width: 25%;
+	padding-left:5px;
+	padding-right:5px;
+}	
+/* main */
+#main {
+	float: right;
+	width: 73%;	
+	margin: 0 0 10px 0; padding: 0;	
+}
+#erreur{
+	color:#f52;
+}
+
+/* footer */
+#footer {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
